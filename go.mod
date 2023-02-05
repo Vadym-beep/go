@@ -1,11 +1,11 @@
-module vadym.module/m/v2
+module github.com/Vadym-beep/go
 
 go 1.20
 
 require syreclabs.com/go/faker v1.2.3
-require vadym.module/m/v2/config v1.2.3
-require vadym.module/m/v2/bot v1.2.3
-require vadym.module/m/v2/main v1.2.3
+require github.com/Vadym-beep/go/config v1.2.3
+require github.com/Vadym-beep/go/bot v1.2.3
+require github.com/Vadym-beep/go/main v1.2.3
 require (
 	github.com/Maldris/mathparse v0.0.0-20170508133428-f0d009a7a773 // indirect
 	github.com/bwmarrin/discordgo v0.27.0 // indirect
