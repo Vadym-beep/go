@@ -5,8 +5,6 @@ import (
 	"strings"
 
 	"syreclabs.com/go/faker"
-	"vadym.module/m/v2/config"
-	"vadym.module/m/v2/bot"
 )
 
 func main() {
@@ -17,16 +15,4 @@ func main() {
 	}
 
 	fmt.Println(strings.Join(phrases[:], "; "))
-	err := config.ReadConfig()
-
-	if err != nil {
-		fmt.Println(err.Error())
-		return
-	}
-
-	bot.Start()
-
-	<-make(chan struct{})
-	return
-  }
 }
